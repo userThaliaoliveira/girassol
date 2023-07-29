@@ -4,9 +4,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif:
 }
 
 h1 {
@@ -125,7 +123,7 @@ section {
 .post-2 {
     flex-direction: column;
     justify-content: end;
-    color: white;
+    color: black;
     box-sizing: border-box;
     padding: 20px;
     min-width: calc(1024px / 3);
@@ -136,7 +134,19 @@ section {
     flex-direction: column;
     gap: 10px;
 }
-.img {
-    flex: 3;
-    border: 1px solid;
+/* .container-paisagem {
+    flex: 10;
+    background-image: url('imagens/varias-flor.avif');
+    justify-content:space-between;
+    align-items: end;
+    display: flex;
+} */
+.container-paisagem {
+    flex: 10;
+    background-image: url('imagens/varias-flor.avif');
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
+  
