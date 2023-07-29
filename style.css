@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -21,6 +26,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    max-width: 1024px;
 }
 
 .close-button {
@@ -44,6 +51,8 @@ section {
     padding: 10px;
     background-color: #f2f2f2;
     border-bottom: 1px solid #ddd; /* Adicionando a linha cinza abaixo da navegação */
+    margin: 0 auto;
+    max-width: 1024px;
 }
 
 .primary-nav ul,
@@ -83,33 +92,51 @@ section {
     background-color: #f2f2f2;
 }
 
-.image-prices {
-    /* Estilos para as imagens e preços na seção inferior */
-}
-
-
-.content-container {
+.folder {
     display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.img-post-2 {
+    background-image: url('imagens/flor-em-pe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.post {
+    display: flex;
+    min-height: 600px;
+    flex: 1;
+    gap: 10px;
+}
+
+.post-1 {
+    flex: 2;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.post-1 > * {
+    flex: 1;
+}
+
+.post-2 {
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+    box-sizing: border-box;
     padding: 20px;
-    background-color: #f2f2f2;
+    min-width: calc(1024px / 3);
 }
 
-.left-content {
-    width: 60%;
+.text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-
-.left-content img {
-    max-width: 100%;
-    height: auto; /* Para manter a proporção da imagem */
-}
-
-.right-content {
-    width: 40%;
-}
-
-.right-content img {
-    max-width: 100%;
-    height: auto; /* Para manter a proporção da imagem */
-    box-sizing: border-box; /* Incluir margens e preenchimento no tamanho especificado */
+.img {
+    flex: 3;
+    border: 1px solid;
 }
