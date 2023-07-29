@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-button {
+    background-color: #ffcc00; /* Cor de fundo amarela */
+    color: #333; /* Cor do texto do "X" */
+    border: none;
+    width: 30px; /* Largura */
+    height: 30px; /* Altura (mesma que a largura para formar um círculo) */
+    border-radius: 50%; /* Transformando em formato de círculo */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 30px; /* Alinhar o "X" verticalmente */
+    text-align: center; /* Alinhar o "X" horizontalmente */
+    cursor: pointer; /* Cursor alterado para indicar que é um botão clicável */
+}
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd; /* Adicionando a linha cinza abaixo da navegação */
+}
+
+.primary-nav ul,
+.secondary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.primary-nav li,
+.secondary-nav li {
+    margin-left: 10px;
+}
+
+.primary-nav li a,
+.secondary-nav li a {
+    color: black;
+    text-decoration: none; /* Removendo o sublinhado */
+    padding: 5px 10px;
+}
+
+.content-container {
+    display: flex;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.left-content,
+.right-content {
+    flex: 1;
+    padding: 10px;
+}
+
+.bottom-section {
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.image-prices {
+    /* Estilos para as imagens e preços na seção inferior */
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.left-content {
+    width: 60%;
+}
+
+.left-content img {
+    max-width: 100%;
+    height: auto; /* Para manter a proporção da imagem */
+}
+
+.right-content {
+    width: 40%;
+}
+
+.right-content img {
+    max-width: 100%;
+    height: auto; /* Para manter a proporção da imagem */
+    box-sizing: border-box; /* Incluir margens e preenchimento no tamanho especificado */
+}
