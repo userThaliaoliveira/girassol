@@ -8,6 +8,9 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+p {
+    
+}
 
 /* Estilo para o cabeçalho principal (topo da página) */
 .top-bar {
@@ -163,3 +166,21 @@ h1 {
     gap: 20px;
     margin-top: 20px;
 }
+.paragrafy{
+ text-align: left;
+ font-size: 20px;   
+}
+/* Estilo para as divs que contêm a imagem e o texto */
+.image-prices {
+    float: left; /* Alinha os elementos à esquerda, fazendo com que fiquem um ao lado do outro */
+    width: 35%; /* Define a largura da div como 25% para que quatro divs caibam lado a lado */
+    max-width: 350px; /* Define a largura máxima da div para que as imagens não fiquem muito grandes */
+    padding: 5px; /* Adiciona um espaço de preenchimento para separar as divs */
+  }
+  
+  /* Estilo para as imagens */
+  .image-prices img {
+    width: 100%; /* Define a largura da imagem como 100% para que ela ocupe toda a largura da div */
+    height: auto; /* Mantém a proporção da imagem, ajustando automaticamente a altura */
+  }
+  
