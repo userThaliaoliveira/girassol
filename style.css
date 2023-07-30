@@ -6,12 +6,12 @@
 
 /* Estilo do corpo da página */
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-p {
-    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 /* Estilo para o cabeçalho principal (topo da página) */
 .top-bar {
     background-color: #333;
@@ -22,6 +22,7 @@ p {
     align-items: center;
     margin: 0 auto;
     max-width: 1024px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Estilo para o botão de fechar */
@@ -36,6 +37,7 @@ p {
     line-height: 30px; /* Alinhar o "X" verticalmente */
     text-align: center; /* Alinhar o "X" horizontalmente */
     cursor: pointer; /* Cursor alterado para indicar que é um botão clicável */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .buy-button {
     border: none;
@@ -45,10 +47,77 @@ p {
     padding: 10px 20px; /* Espaçamento interno do botão */
     font-size: 16px; /* Tamanho da fonte do texto */
     cursor: pointer; /* Cursor alterado para indicar que é um botão clicável */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.button-filter{
+    border: none;
+    border-radius: 20px; /* Tamanho do raio determina o quanto o botão será arredondado */
+    background-color: #ffcc00; /* Cor de fundo amarela */
+    color: #000; /* Cor do texto preto */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do texto */
+    cursor: pointer; /* Cursor alterado para indicar que é um botão clicável */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.image-prices {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Adicione margem entre as divs para espaçamento */
+}
+
+.dot-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(500%);
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* Cores das bolinhas */
+.dot:nth-child(1) {
+    background-color: yellow;
+}
+
+.dot:nth-child(2) {
+    background-color: orangered;
+}
+
+.dot:nth-child(3) {
+    background-color: orange;
+}
+
+.dot:nth-child(4) {
+    background-color: yellowgreen;
+}
+
+.button-filter2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 6%;
+    left: 35%;
+    transform: translateX(-140%);
+    border: none;
+    border-radius: 20px; /* Tamanho do raio determina o quanto o botão será arredondado */
+    background-color: #ffcc00; /* Cor de fundo amarela */
+    color: #000; /* Cor do texto preto */
+    padding: 3px 10px; /* Espaçamento interno do botão */
+    font-size: 14px; /* Tamanho da fonte do texto */
+    cursor: pointer; /* Cursor alterado para indicar que é um botão clicável */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Estilo para as seções da página */
-section {
+section{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,6 +126,20 @@ section {
     border-bottom: 1px solid #ddd; /* Adicionando a linha cinza abaixo da navegação */
     margin: 0 auto;
     max-width: 1024px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #ddd;
+    background-color: black;
+    margin: 0 auto;
+    max-width: 1024px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /* Estilo para a navegação principal e secundária (listas) */
@@ -66,12 +149,13 @@ section {
     margin: 0;
     padding: 0;
     display: flex;
+    
 }
 
 /* Estilo para os itens de navegação principal e secundária (itens da lista) */
 .primary-nav li,
 .secondary-nav li {
-    margin-left: 10px;
+    margin-left: 10px;font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Estilo para os links da navegação principal e secundária */
@@ -80,6 +164,7 @@ section {
     color: black;
     text-decoration: none; /* Removendo o sublinhado */
     padding: 5px 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Estilo para o contêiner de uma postagem */
@@ -116,8 +201,9 @@ section {
 .text-group {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     padding-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Estilo para a segunda postagem */
@@ -151,9 +237,8 @@ section {
 h1 {
     margin: 0 auto;
     font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
 /* Estilo para a classe .logo */
 .logo {
     width: 50px;
@@ -168,7 +253,10 @@ h1 {
 }
 .paragrafy{
  text-align: left;
- font-size: 20px;   
+ font-size: 20px; 
+ padding-top: 30px;
+ padding-bottom: 30px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;  
 }
 /* Estilo para as divs que contêm a imagem e o texto */
 .image-prices {
@@ -183,4 +271,5 @@ h1 {
     width: 100%; /* Define a largura da imagem como 100% para que ela ocupe toda a largura da div */
     height: auto; /* Mantém a proporção da imagem, ajustando automaticamente a altura */
   }
+  
   
